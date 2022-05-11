@@ -21,7 +21,7 @@ export default function App() {
               img={`./images/${i.coverImg}`}
               rating={i.stats.rating}
               reviewCount={i.stats.reviewCount}
-              country={i.location}
+              location={i.location}
               title={i.title}
               price={i.price}
             /> 
@@ -30,7 +30,9 @@ export default function App() {
     <div>
       <Navbar />
       <Hero />
-      { cards }
+      <section className="cards-list">
+                {cards}
+      </section>
     </div>
   )
 }
